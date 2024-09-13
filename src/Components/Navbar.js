@@ -14,30 +14,26 @@ import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
-import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
+
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [
     {
-      text: "Home",
+      text: "Главная",
       icon: <HomeIcon />,
     },
     {
-      text: "About",
+      text: "О нас",
       icon: <InfoIcon />,
     },
     {
-      text: "Testimonials",
+      text: "Каталог",
       icon: <CommentRoundedIcon />,
     },
     {
-      text: "Contact",
+      text: "Контакты",
       icon: <PhoneRoundedIcon />,
-    },
-    {
-      text: "Cart",
-      icon: <ShoppingCartRoundedIcon />,
     },
   ];
   return (
@@ -50,7 +46,13 @@ const Navbar = () => {
         <a href="#about">О нас</a>
         <a href="#catalog">Каталог</a>
         <a href="#contact">Контакты</a>
-        <a href="https://wa.me/77057072288" className="primary-button" target="_blank">Написать нам</a>
+        <a
+          href="https://wa.me/77057072288"
+          className="primary-button"
+          target="_blank"
+        >
+          Написать нам
+        </a>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />

@@ -258,9 +258,6 @@ nav {
   color: #585858;
 }
 
-/* .footer-section-one {
-  border: 2px solid blue;
-} */
 .footer-section-two {
   flex: 1;
   display: flex;
@@ -455,16 +452,6 @@ nav {
     text-align: center;
   }
 
-  .watch-video-button {
-    margin-left: 0rem !important;
-    margin-top: 1rem;
-    font-size: 1rem !important;
-  }
-
-  .watch-video-button svg {
-    margin-right: 0.5rem !important;
-  }
-
   .about-section-image-container {
     margin-right: 0rem !important;
   }
@@ -529,7 +516,7 @@ nav {
   align-items: center;
   justify-content: center;
   padding: 20px 24px;
-  background: linear-gradient(45deg, #25D366, #128C7E); /* Градиент для фона */
+  background: linear-gradient(45deg, #25D366, #128C7E);
   color: #fff;
   text-decoration: none;
   border-radius: 8px;
