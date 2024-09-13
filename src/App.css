@@ -136,6 +136,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 
 .secondary-button svg {
@@ -272,11 +273,12 @@ nav {
   min-width: 190px;
 }
 
-.footer-section-columns span {
+.footer-section-columns a {
   margin: 0.25rem 0rem;
   font-weight: 600;
   color: #4c4c4c;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .testimonial-section-bottom {
@@ -517,13 +519,40 @@ nav {
   }
 }
 
-.nav-logo {
-  font-size: 2rem;
-  /* Размер шрифта */
-  font-weight: bold;
-  /* Жирный шрифт */
-  color: #ff5733;
-  /* Цвет текста */
-  padding: 10px;
-  /* Отступы */
+.contact-whatsapp {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.whatsapp-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 24px;
+  background: linear-gradient(45deg, #25D366, #128C7E); /* Градиент для фона */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.whatsapp-link:hover {
+  background: linear-gradient(45deg, #1EBEA5, #0E6E55);
+}
+
+.whatsapp-link svg {
+  margin-left: 10px;
+}
+
+
+.contact-text {
+  font-size: 1.2rem; 
+  color: #555; 
+  margin-bottom: 20px; 
+  font-weight: 500; 
+  line-height: 1.6; 
+  max-width: 600px; 
+  margin-left: auto; 
+  margin-right: auto; 
 }

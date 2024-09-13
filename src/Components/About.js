@@ -26,7 +26,9 @@ const About = () => {
           Выбирайте наши леса для уверенности и надежности в строительстве.
         </p>
         <div className="about-buttons-container">
-          <button className="secondary-button">Позвонить нам</button>
+        <a href="tel:87775455504" className="secondary-button">
+            Позвонить нам
+          </a>
         </div>
       </div>
     </div>
