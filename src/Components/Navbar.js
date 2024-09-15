@@ -15,25 +15,28 @@ import InfoIcon from "@mui/icons-material/Info";
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 
-
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [
     {
       text: "Главная",
       icon: <HomeIcon />,
+      link: "#home"
     },
     {
       text: "О нас",
       icon: <InfoIcon />,
+      link: "#about"
     },
     {
       text: "Каталог",
       icon: <CommentRoundedIcon />,
+      link: "#catalog"
     },
     {
       text: "Контакты",
       icon: <PhoneRoundedIcon />,
+      link: "#contact"
     },
   ];
   return (
@@ -67,7 +70,7 @@ const Navbar = () => {
           <List>
             {menuOptions.map((item) => (
               <ListItem key={item.text} disablePadding>
-                <ListItemButton>
+                <ListItemButton component='a' href={item.link}>
                   <ListItemIcon>{item.icon}</ListItemIcon>
                   <ListItemText primary={item.text} />
                 </ListItemButton>
