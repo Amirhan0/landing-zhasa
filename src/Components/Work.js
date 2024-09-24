@@ -106,5 +106,5 @@ const Work = () => {
     </div>
   );
 };
-с
+
 export default Work;
