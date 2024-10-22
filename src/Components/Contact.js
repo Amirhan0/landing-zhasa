@@ -7,9 +7,9 @@ const Contact = () => {
       <h1 className="primary-heading">Есть вопросы?</h1>
       <h1 className="primary-heading">Мы готовы помочь</h1>
       <div className="contact-whatsapp">
-      <p className="contact-text">Если у вас появились вопросы, напишите нам на WhatsApp:</p>
-        <a href="https://wa.me/77057072288" className="whatsapp-link" target="_blank" rel="noopener noreferrer">
-          Написать в WhatsApp <FiArrowRight />
+      <p className="contact-text">Если у вас появились вопросы, звоните нам:</p>
+        <a href="tel:87775455504" className="secondary-button" target="_blank" rel="noopener noreferrer">
+          Позвонить сейчас <FiArrowRight />
         </a>
       </div>
     </div>

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import Fasad from "../Assets/fasad.jpg";
-import VishkaOne from "../Assets/vishka-tur-1.jpg";
-import VishkaTwo from "../Assets/vishka-tur-3.jpg";
-import VishkaThree from "../Assets/vishka-tur-2.jpg";
+import fasad from "../Assets/fasad.webp";
+import VishkaOne from "../Assets/0.7-1.6.webp";
+import VishkaTwo from "../Assets/1.2-2.0.jpg";
+import VishkaThree from "../Assets/2-2.jpg";
 Modal.setAppElement("#root");
 
 const Work = () => {
@@ -12,32 +12,41 @@ const Work = () => {
 
   const workInfoData = [
     {
-      image: Fasad,
-      title: "Фасадные леса",
-      text: "Размеры: высота 2 м",
-      description:
-        "Длина 3 м, ширина 1 м. Эти леса предназначены для работы на фасадах зданий.",
-    },
-    {
       image: VishkaOne,
       title: "Вышка-тура 0.7x1.6 м",
-      text: "Размеры: 0.7 м на 1.6 м.",
-      description:
-        "Высота начинается от 2.7 м и может достигать 21 м. Подходит для различных строительных работ.",
+      text: "Рабочая площадка: 0.7 x 1.6 м",
+      description: "Производство: Россия",
+      minHeight: "2.8 м",
+      maxHeight: "7.6 м",
+      maxLoad: "250 кг",
     },
     {
       image: VishkaTwo,
-      title: "Вышка-тура 2.0x2.0 м",
-      text: "Размеры: 1.2 м на 2.0 м.",
-      description:
-        "Высота начинается от 2.7 м и может достигать 21 м. Отлично подходит для более высоких конструкций.",
+      title: "Вышка-тура 1.2x2.0 м",
+      text: "Рабочая площадка: 1.2 x 2.0 м",
+      description: "Производство: Россия",
+      minHeight: "2.8 м",
+      maxHeight: "18.5 м",
+      maxLoad: "250 кг",
     },
     {
       image: VishkaThree,
       title: "Вышка-тура 2.0x2.0 м",
-      text: "Размеры: 2.0 м на 2.0 м.",
-      description:
-        "Высота начинается от 2.7 м и может достигать 21 м. Идеально для более сложных и высоких строительных проектов.",
+      text: "Рабочая площадка: 2.0 x 2.0 м",
+      description: "Производство: Россия",
+      minHeight: "2.8 м",
+      maxHeight: "21 м",
+      maxLoad: "250 кг",
+    },
+    {
+      image: fasad,
+      title: "Фасадные леса",
+      text: "Максимальная высота: 40 м",
+      description: "Производство: Россия",
+      tierHeight: "2м", 
+      length: "3м; 2,5м; 2м", 
+      width: "1 м", 
+      metalThickness: "1,5 мм", 
     },
   ];
 
@@ -93,8 +102,27 @@ const Work = () => {
 
             <div className="modal-info">
               <h2>{selectedWork.title}</h2>
-              <p>{selectedWork.text}</p>
-              <p>{selectedWork.description}</p>
+              <ul>
+                {selectedWork.minHeight && (
+                  <>
+                    <li>{selectedWork.text}</li>
+                    <li>{selectedWork.description}</li>
+                    <li>Минимальная высота: {selectedWork.minHeight}</li>
+                    <li>Максимальная высота: {selectedWork.maxHeight}</li>
+                    <li>Нагрузка: {selectedWork.maxLoad}</li>
+                  </>
+                )}
+
+                {selectedWork.tierHeight && (
+                  <>
+                    <li>{selectedWork.description}</li>
+                    <li>Высота яруса: {selectedWork.tierHeight}</li>
+                    <li>Длина: {selectedWork.length}</li>
+                    <li>Ширина: {selectedWork.width}</li>
+                    <li>Толщина металла: {selectedWork.metalThickness}</li>
+                  </>
+                )}
+              </ul>
               <div className="modal-buttons">
                 <button onClick={closeModal}>Закрыть</button>
                 <a href="tel:87775455504">Позвонить</a>

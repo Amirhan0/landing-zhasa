@@ -313,6 +313,7 @@ nav {
   margin-top: 1.5rem;
 }
 
+/* Work Section */
 .work-section-wrapper {
   margin-top: 15rem;
 }
@@ -333,25 +334,6 @@ nav {
   flex-direction: column;
 }
 
-.work-section-info {
-  width: 290px;
-  min-height: 350px;
-  background-color: white;
-  padding: 1rem 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 1rem;
-  color: #505050;
-  margin: 1rem 2rem;
-}
-
-.work-section-info h2 {
-  margin: 1rem 0rem;
-}
-
 .work-section-bottom {
   margin-top: 5rem;
   display: flex;
@@ -360,11 +342,52 @@ nav {
   flex-wrap: wrap;
 }
 
-.work-section-info p {
-  flex: 1;
+/* Ensuring all cards are the same size */
+.work-section-info {
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  padding: 1rem 2rem;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  font-weight: 600;
+  text-align: center;
+  border-radius: 1rem;
+  color: #505050;
+  margin: 1rem;
+  transition: transform 0.3s;
+}
+
+.work-section-info:hover {
+  transform: translateY(-5px);
+}
+
+.work-section-info h2 {
+  margin: 1rem 0rem;
+  font-size: 1.2rem;
+}
+
+/* Ensuring image uniformity */
+.info-boxes-img-container img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+/* Buttons within cards */
+.work-section-info button {
+  padding: 0.8rem 2rem;
+  background-color: #fe9e0d;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.work-section-info button:hover {
+  background-color: #e48f0f;
 }
 
 @media (max-width: 1000px) {
@@ -385,6 +408,7 @@ nav {
 @media (max-width: 800px) {
   .nav-logo-container {
     max-width: 140px;
+    text-align: center;
   }
 
   .navbar-links-container {
@@ -504,32 +528,6 @@ nav {
   .about-background-image-container {
     display: none;
   }
-}
-
-.contact-whatsapp {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.whatsapp-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 24px;
-  background: linear-gradient(45deg, #25D366, #128C7E);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.whatsapp-link:hover {
-  background: linear-gradient(45deg, #1EBEA5, #0E6E55);
-}
-
-.whatsapp-link svg {
-  margin-left: 10px;
 }
 
 
