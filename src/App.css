@@ -1,7 +1,9 @@
+
+
+
+
 .nav-logo {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #fe9e0d;
+  width: 18rem;
   padding: 10px;
 }
 
@@ -218,6 +220,18 @@ nav {
   margin: 6rem 0rem;
 }
 
+.information-page-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 8rem 0rem;
+}
+
+.information-page-wrapper h1 {
+  max-width: 900px !important;
+}
+
 .contact-form-container {
   background-color: white;
   max-width: 700px;
@@ -405,9 +419,16 @@ nav {
   }
 }
 
+.info-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+
 @media (max-width: 800px) {
   .nav-logo-container {
-    max-width: 140px;
+    max-width: 200px;
     text-align: center;
   }
 
@@ -542,6 +563,13 @@ nav {
   margin-right: auto;
 }
 
+.information-text {
+  font-size: 1.2rem;
+  color: #555;
+  font-weight: 500;
+  line-height: 1.6;
+  max-width: 600px;
+}
 
 .modal {
   position: fixed;
@@ -638,6 +666,32 @@ nav {
   border-radius: 8px;
 }
 
+.buttons-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+.navbar-button {
+  padding: 1rem; 
+  background-color: #fe9e0d;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 500;
+  color: white;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+
 @media (max-width: 600px) {
   .modal {
     width: 90%;
@@ -676,3 +730,6 @@ nav {
     margin-bottom: 0.5rem;
   }
 }
+
+
+

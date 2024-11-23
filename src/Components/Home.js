@@ -4,6 +4,7 @@ import BannerImage from "../Assets/bannerimage.png";
 import Navbar from "./Navbar";
 import { FiArrowRight } from "react-icons/fi";
 
+
 const Home = () => {
   return (
     <div className="home-container" id="home">

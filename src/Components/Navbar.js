@@ -14,6 +14,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
+import logotipZhasa from "../Assets/logotipZhasaCompany.svg"
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -42,7 +43,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="nav-logo-container">
-        <span className="nav-logo">ИП ZHASA</span>
+        <img src={logotipZhasa} className='nav-logo'/>
       </div>
       <div className="navbar-links-container">
         <a href="#home">Главная</a>
