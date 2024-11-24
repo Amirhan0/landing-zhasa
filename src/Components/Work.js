@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import fasad from "../Assets/fasad.webp";
+import fasad from "../Assets/fasad.png";
 import VishkaOne from "../Assets/0.7-1.6.webp";
 import VishkaTwo from "../Assets/1.2-2.0.jpg";
 import VishkaThree from "../Assets/2-2.jpg";

@@ -4,18 +4,18 @@ import About from "./Components/About";
 import Work from "./Components/Work";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
-import Buttons from "./Components/Buttons"
 import Information from "./Components/Information";
+import Carts from "./Components/Carts";
 
 function App() {
   return (
     <div className="App">
-      <Buttons/>
       <Home />
       <Work />
       <Information />
-      <Contact />
       <About />
+      <Carts />
+      <Contact />
       <Footer />
     </div>
   );

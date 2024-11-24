@@ -17,7 +17,7 @@ const Information = () => {
       {informationData.map((info, index) => (
         <ul key={index} className="info-list">
         <h1 className="primary-heading">{info.title}</h1>
-          <li className="information-text">Производственная максимальная высота: {info.height}</li>
+          <li className="information-text">Высота: {info.height}</li>
           <li className="information-text">Шаг секции нагрузки: {info.section}</li>
           <li className="information-text">Рабочая площадка: {info.width}</li>
           <li className="information-text">Максимальная нагрузка: {info.load}</li>

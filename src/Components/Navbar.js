@@ -50,12 +50,8 @@ const Navbar = () => {
         <a href="#about">О нас</a>
         <a href="#catalog">Каталог</a>
         <a href="#contact">Контакты</a>
-        <a
-          href="https://wa.me/77057072288"
-          className="primary-button"
-          target="_blank"
-        >
-          Написать нам
+       <a href="tel:87775455504" className="primary-button" target="_blank" rel="noopener noreferrer">
+          Позвонить нам
         </a>
       </div>
       <div className="navbar-menu-container">

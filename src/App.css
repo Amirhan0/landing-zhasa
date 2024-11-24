@@ -151,7 +151,7 @@ nav {
 }
 
 .about-section-container {
-  margin-top: 20rem;
+  margin-top: 10rem;
   position: relative;
   display: flex;
   align-items: center;
@@ -225,7 +225,7 @@ nav {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 8rem 0rem;
+  margin: 6rem 0rem;
 }
 
 .information-page-wrapper h1 {
@@ -505,6 +505,10 @@ nav {
     margin-top: 5rem !important;
   }
 
+  carts-section-wrapper {
+    margin-top: 5rem !important;
+  }
+
   .work-section-bottom {
     margin-top: 1rem !important;
   }
@@ -732,4 +736,59 @@ nav {
 }
 
 
+.carts-section-wrapper {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px; 
+  padding: 20px;
+  margin-top: 4rem;
+  justify-content: center; 
+}
 
+.cart-div {
+  flex: 1 1 calc(50% - 20px); /* Занимает 50% ширины с учетом отступов */
+  max-width: calc(50% - 20px); /* Максимальная ширина карточки */
+  background-color: #f9f9f9; /* Светлый фон */
+  border: 1px solid #ddd; /* Легкая граница */
+  border-radius: 10px; /* Скругленные углы */
+  padding: 20px; /* Внутренние отступы */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для объема */
+  display: flex;
+  flex-direction: column; /* Контент внутри вертикально */
+  gap: 15px; /* Расстояние между элементами */
+}
+
+.cart-heading {
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: #4c4c4c;
+  /* line-height: 5rem; */
+  max-width: 600px;
+}
+
+.cart-text {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  max-width: 500px;
+  color: #6a6a6a;
+  margin: 1.5rem 0rem;
+}
+
+@media (max-width: 768px) {
+  .carts-section-wrapper  {
+    margin-top: 2rem;
+  }
+
+  .cart-div {
+      flex: 1 1 100%; 
+      max-width: 100%; 
+  }
+
+  .cart-heading  {
+      font-size: 20px;
+      text-align: center;
+  }
+
+  .cart-text {
+      font-size: 14px;
+      text-align: center; 
+  }
+}
